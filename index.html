@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cankurt Medya Workshop | 10 Nisan 19:00</title>
+    <style>
+      :root {
+        --bg: #0b1020;
+        --card: #131b36;
+        --text: #f4f7ff;
+        --muted: #b8c2e0;
+        --brand: #4dd4ff;
+        --brand-2: #7b8cff;
+        --ok: #30d158;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, Arial, sans-serif;
+        background: radial-gradient(circle at 20% 20%, #1a2656 0%, var(--bg) 45%, #060913 100%);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(1120px, 92%);
+        margin: 0 auto;
+        padding: 48px 0 80px;
+      }
+
+      .hero {
+        display: grid;
+        gap: 28px;
+        margin-bottom: 32px;
+      }
+
+      .badge {
+        width: fit-content;
+        background: rgba(77, 212, 255, 0.16);
+        border: 1px solid rgba(77, 212, 255, 0.6);
+        color: #c6f5ff;
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+      }
+
+      h1 {
+        font-size: clamp(1.8rem, 4vw, 3.2rem);
+        line-height: 1.2;
+        margin: 0;
+      }
+
+      .lead {
+        color: var(--muted);
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        max-width: 900px;
+      }
+
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .btn {
+        padding: 12px 20px;
+        border-radius: 10px;
+        border: none;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .btn-primary {
+        background: linear-gradient(120deg, var(--brand), var(--brand-2));
+        color: #051024;
+      }
+
+      .btn-secondary {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        color: var(--text);
+      }
+
+      .video-card,
+      .content-card {
+        background: linear-gradient(160deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 18px;
+        padding: 22px;
+        backdrop-filter: blur(4px);
+      }
+
+      .video-wrap {
+        margin-top: 12px;
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+      }
+
+      .video-wrap iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .grid {
+        margin-top: 24px;
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      }
+
+      .topic {
+        background: var(--card);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 14px;
+        padding: 16px;
+      }
+
+      .topic h3 {
+        margin-top: 0;
+        margin-bottom: 8px;
+        font-size: 1.05rem;
+      }
+
+      .topic p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .benefits {
+        margin: 30px 0 0;
+        display: grid;
+        gap: 12px;
+      }
+
+      .benefit {
+        background: rgba(48, 209, 88, 0.1);
+        border: 1px solid rgba(48, 209, 88, 0.4);
+        border-radius: 12px;
+        padding: 12px 14px;
+      }
+
+      .benefit strong {
+        color: #c8ffcf;
+      }
+
+      .final-cta {
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      .note {
+        color: #d8def8;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <span class="badge">CAN KURT MEDYA | Canlı Workshop • 10 Nisan • 19:00</span>
+        <h1>
+          Meta reklam panelini profesyonelce kur, doğru hedef kitleyi öğren, yapay zeka ile içerik üret,
+          CRM + WhatsApp otomasyonu ile müşteri akış sistemini hazırla.
+        </h1>
+        <p class="lead">
+          Bu workshop, reklam vermeye yeni başlayanlar ve sürecini profesyonel seviyeye taşımak isteyenler için
+          sade ve uygulanabilir bir yol haritası sunar. Tek oturumda sistem kurulumunu görür, aynı gece kendi
+          reklam yapını yönetebilir hale gelirsin.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#kayit">Hemen Kayıt Ol</a>
+          <a class="btn btn-secondary" href="#program">Workshop Programını İncele</a>
+        </div>
+      </section>
+
+      <section class="video-card" id="program">
+        <h2>Workshop Tanıtım Videosu</h2>
+        <p class="lead">
+          Aşağıdaki video alanından workshop akışını inceleyebilir, 10 Nisan saat 19:00’da hangi adımları birlikte
+          uygulayacağımızı önceden görebilirsin.
+        </p>
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Cankurt Medya Workshop Tanıtım Videosu"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="content-card" style="margin-top: 24px" id="kayit">
+        <h2>Workshop İçeriği (Tamamen Uygulama Odaklı)</h2>
+        <div class="grid">
+          <article class="topic">
+            <h3>1) Meta Reklam Paneli Kurulumu</h3>
+            <p>
+              Business Manager, reklam hesabı, piksel, temel güvenlik ve doğru hesap yapısı adım adım anlatılır.
+              Dağınık hesap kullanımını bırakıp sürdürülebilir bir altyapı kurarsın.
+            </p>
+          </article>
+          <article class="topic">
+            <h3>2) Profesyonel Reklam Verme Sistemi</h3>
+            <p>
+              Kampanya hedefi seçimi, bütçe kontrolü, reklam seti mantığı ve ölçümleme ile daha net ve yönetilebilir
+              reklam akışı kurmayı öğrenirsin.
+            </p>
+          </article>
+          <article class="topic">
+            <h3>3) Hedef Kitleyi Doğru Öğrenme</h3>
+            <p>
+              Doğru kitleyi belirleme, test kurgusu ve veri yorumlama ile reklamlarının rastgele değil, stratejik
+              şekilde ilerlemesini sağlarsın.
+            </p>
+          </article>
+          <article class="topic">
+            <h3>4) Yapay Zeka ile İçerik Üretimi</h3>
+            <p>
+              Reklam metni, görsel fikirleri ve kampanya iletişim dilini AI destekli yöntemlerle daha hızlı ve etkili
+              üretmeyi görürsün.
+            </p>
+          </article>
+          <article class="topic">
+            <h3>5) CRM Sistemi ile WhatsApp Otomasyonu</h3>
+            <p>
+              Gelen talepleri kaçırmayan bir CRM düzeni, WhatsApp otomasyon adımları ve müşteri takibi için pratik
+              işleyiş kurarsın.
+            </p>
+          </article>
+          <article class="topic">
+            <h3>6) Müşteri Akış Sistemi Kurma</h3>
+            <p>
+              İlk temastan satışa kadar ilerleyen müşteri akışını planlar, her aşamaya uygun mesaj ve süreç yapısını
+              uygulayarak düzenli bir satış hattı oluşturursun.
+            </p>
+          </article>
+        </div>
+
+        <div class="benefits">
+          <div class="benefit"><strong>Net Kazanım:</strong> Workshop sonrası kendi reklam sistemini dış desteğe bağlı kalmadan yönetebilirsin.</div>
+          <div class="benefit"><strong>Zaman Kazancı:</strong> Dağınık deneme-yanılma yerine, tek bir akışla daha hızlı sonuca ilerlersin.</div>
+          <div class="benefit"><strong>Dönüşüm Odağı:</strong> Hedef kitle + içerik + otomasyon birleşimiyle müşteri sürecini daha verimli hale getirirsin.</div>
+        </div>
+
+        <div class="final-cta">
+          <h3>10 Nisan 19:00’da yerini ayırt, reklam ve müşteri sistemini profesyonel seviyeye taşı.</h3>
+          <p class="note">Kontenjan odaklı canlı eğitimdir. Erken kayıt avantajı için şimdi başvur.</p>
+          <a class="btn btn-primary" href="#">Kayıt Formuna Git</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
